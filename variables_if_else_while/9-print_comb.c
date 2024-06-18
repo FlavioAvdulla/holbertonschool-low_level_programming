@@ -16,11 +16,10 @@ for (i = '0'; i <= '9'; i++)
 {
 putchar(i);
 }
-if (i != '9')
+if (c != '9')
 {
 putchar('c');
 putchar(' ');
-}
 }
 putchar('\n');
 return (0);
