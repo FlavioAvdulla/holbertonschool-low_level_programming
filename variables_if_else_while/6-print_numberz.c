@@ -14,7 +14,7 @@ int c;
 
 for (c = 0; c < 10; c++)
 {
-puthcar(c + '0');
+putchar(c + '0');
 }
 putchar('\n');
 return (0);
