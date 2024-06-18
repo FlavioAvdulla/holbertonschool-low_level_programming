@@ -18,7 +18,7 @@ putchar(i);
 }
 if (i != '9')
 {
-putchar('c');
+putchar('i');
 }
 {
 putchar(' ');
