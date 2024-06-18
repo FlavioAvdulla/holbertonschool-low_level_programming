@@ -21,6 +21,7 @@ if (i != '9')
 putchar('c');
 putchar(' ');
 }
+}
 putchar('\n');
 return (0);
 }
