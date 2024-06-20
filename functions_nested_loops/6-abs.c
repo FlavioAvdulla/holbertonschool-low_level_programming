@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * Write a function that prints the last digit of a number.
- * @n: the number to check
- *Returns the value of the last digit
+ * _abs - computes the absolute value of an integer
+ * @n: the integer to compute the absolute value of
+ *
+ * Return: the absolute value of the integer
  */
 int _abs(int n)
 {
