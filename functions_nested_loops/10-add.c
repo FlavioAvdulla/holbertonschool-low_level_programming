@@ -1,4 +1,3 @@
-c
 #include "main.h"
 
 /**
@@ -10,5 +9,5 @@ c
  */
 int add(int a, int b)
 {
-    return (a + b); /* Corrected return statement with parentheses */
+return a + b;
 }
