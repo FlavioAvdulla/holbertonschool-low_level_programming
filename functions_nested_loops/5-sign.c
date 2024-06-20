@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * print_s
+ * print_s Write a function that prints the sign of a number.
  * @c: char passed as argument
- * Return: -1 if n is less than zero, 1 if n is greater than zero, 0 if n is zero
+ * Returns 1 and prints + if n is greater than zero
+ * Returns 0 and prints 0 if n is zero
+ * Returns -1 and prints - if n is less than zero
  */
 int print_sign(int n)
 {
