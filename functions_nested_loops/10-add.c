@@ -10,5 +10,5 @@ c
  */
 int add(int a, int b)
 {
-return (a + b);
+    return (a + b); /* Corrected return statement with parentheses */
 }
