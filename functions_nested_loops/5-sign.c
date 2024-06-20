@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * print_sign - checks if it is a symbol
+ * print_sign Returns 1 and prints + if n is greater than zero
+Returns 0 and prints 0 if n is zero
+Returns -1 and prints - if n is less than zero
  * @c: char passed as argument
  * Return: 1 if c is greater than zero
  */
