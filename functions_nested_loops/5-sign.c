@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_sign - checks if it is a symbol
+ * print_sign - checks if it is a symbol
  * @c: char passed as argument
  * Return: 1 if c is greater than zero
  */
