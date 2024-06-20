@@ -6,17 +6,16 @@
  * @n: the number to check
  *Returns the value of the last digit
  */
-int _abs(int)
+int _abs(int number)
 {
 
-	if(n > 0)
+	if(number > 0)
 		{
-		return (n);
+		return (number);
 		}
-	
+	else
 	if(n < 0)
 		{
-		return (-n);
+		return (-number);
 		}
-
 }
