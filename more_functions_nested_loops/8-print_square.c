@@ -8,11 +8,9 @@
  * If the value of size is 0 or negative, it only prints a newline
  * character.
  */
-
 void print_square(int size)
 
 {
-
 	int row, column;
 
 	for (row = 0; row < size; row++)
