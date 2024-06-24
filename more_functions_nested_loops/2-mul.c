@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * mul - checks if a character is uppercase.
- * @c: the character to check
+ * mul - multiplies two integers.
+ * @a: the first integer.
+ * @b: the second integer.
  *
- * Return: 1 if c is uppercase, 0 otherwise
+ * Return: the result of multiplication.
  */
 
 int mul(int a, int b)
 
 {
 	return(a * b);
-
 }
