@@ -12,7 +12,7 @@ int i = 0;
 while (str[i] != '\0')
 {
 	_putchar(str[i]);
-	i += 2; // Move to every other character
+	i += 2;
 }
 _putchar('\n');
 }
