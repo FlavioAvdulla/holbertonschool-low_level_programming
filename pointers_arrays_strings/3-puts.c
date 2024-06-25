@@ -7,8 +7,10 @@
 void _puts(char *str)
 
 {
-	char greeting[] = {'H', 'e', 'l', 'o', '\0'};
-	printf ("Greetings message: %s\n", greetings);
-	
-	return (0);
+	while (*str != '\0')
+	{
+		_putchar (*str);
+		str++;
+	}
+	_putchar('\n');
 }
