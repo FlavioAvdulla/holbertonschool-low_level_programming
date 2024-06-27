@@ -1,18 +1,18 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * main - check the code for
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-    char s1[] = "Talk is cheap. Show me the code.\n";
-    char s2[] = "TALK IS CHEAP. SHOW ME THE CODE.\n";
-    char *p1;
-    char *p2;
+    char s[] = "Expect the best. Prepare for the worst. Capitalize on what comes.\n";
+    char *p;
 
-    p1 = leet(s1);
-    p2 = leet(s2);
-
-    printf("%s", p1);
-    printf("%s", p2);
-    
+    p = leet(s);
+    printf("%s", p);
+    printf("%s", s);
     return (0);
 }

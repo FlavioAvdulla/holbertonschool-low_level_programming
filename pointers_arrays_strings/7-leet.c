@@ -10,7 +10,7 @@ char *leet(char *str)
 {
 char *ptr = str;
 char leet_letters[] = "aAeEoOtTlL";
-char leet_numbers[] = "44330771";
+char leet_numbers[] = "43071";
 int i;
 
 while (*ptr)
@@ -20,6 +20,7 @@ while (*ptr)
 		if (*ptr == leet_letters[i])
 		{
 			*ptr = leet_numbers[i / 2];
+			break;
 		}
 	}
 	ptr++;
