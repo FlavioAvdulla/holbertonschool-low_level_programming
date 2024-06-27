@@ -13,17 +13,15 @@ char *leet_letters = "aAeEoOtTlL";
 char *leet_numbers = "44330771";
 int i;
 
-while (*ptr != '\0')
+while (*ptr)
 {
-	i = 0;
-	while (leet_letters[i] != '\0')
+	for (i = 0; leet_letters[i]; i++)
 	{
 		if (*ptr == leet_letters[i])
 		{
 			*ptr = leet_numbers[i];
 			break;
 		}
-		i++;
 	}
 	ptr++;
 }
