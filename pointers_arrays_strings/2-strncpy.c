@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
 * _strncpy - Copies a string.
 * @dest: The destination string buffer.
@@ -18,7 +19,7 @@ while (*src && n > 0)
 	}
 	while (n > 0)
 {
-	*dest++ ='\0';
+	*dest++ = '\0';
 	n--;
 }
 return (copy);
