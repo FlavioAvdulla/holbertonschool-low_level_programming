@@ -1,31 +1,32 @@
 #include "main.h"
 
 /**
-* puts_half - Prints half of a string followed by a new line.
-* @str: Pointer to the string to be printed.
+* leet - Encodes a string into 1337.
+* @str: The string to encode.
+*
+* Return: Pointer to the encoded string.
 */
-void puts_half(char *str)
+char *leet(char *str)
 {
-int length = 0;
-int start_index;
+char *ptr = str;
+char *leet_letters = "aAeEoOtTlL";
+char *leet_numbers = "44330771";
+int i;
 
-while (str[length] != '\0')
-	length++;
-
-if (length % 2 == 0)
+while (*ptr != '\0')
 {
-	start_index = length / 2;
+	i = 0;
+	while (leet_letters[i] != '\0')
+	{
+		if (*ptr == leet_letters[i])
+		{
+			*ptr = leet_numbers[i];
+			break;
+		}
+		i++;
+	}
+	ptr++;
 }
-else
-{
-	start_index = (length - 1) / 2 + 1;
-}
 
-while (str[start_index] != '\0')
-{
-	_putchar(str[start_index]);
-	start_index++;
-}
-
-_putchar('\n');
+return (str);
 }
