@@ -7,8 +7,8 @@
 * @size: size of the matrix (number of rows or columns)
 *
 * Description: Calculates the sum of the main diagonal (top-left to bottom-right)
-*              and the secondary diagonal (top-right to bottom-left) of the matrix
-*              and prints them in the format specified.
+* and the secondary diagonal (top-right to bottom-left) of the matrix
+* and prints them in the format specified.
 */
 void print_diagsums(int *a, int size)
 {
