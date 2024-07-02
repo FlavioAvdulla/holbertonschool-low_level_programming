@@ -1,22 +1,34 @@
 #include "main.h"
 
 /**
-* _strcmp - Compares two strings s1 and s2.
-* Returns an integer less than, equal to, or greater than zero
-* if s1 is found, respectively, to be less than, to match, or be
-* greater than s2.
-* @s1: A pointer to the first string to be compared.
-* @s2: A pointer to the second string to be compared.
-* Return: An integer less than, equal to, or greater than zero if s1 is found,
-* respectively, to be less than, to match, or be greater than s2.
+* _strspn - gets the length of a prefix substring
+* @s: the string to be searched
+* @accept: the string containing the list of characters to match in s
+*
+* Return: the number of bytes in the initial segment of s which consist only
+* of bytes from accept
 */
-int _strcmp(char *s1, char *s2)
+unsigned int _strspn(char *s, char *accept)
+{
+unsigned int count = 0;
+char *p;
 
+while (*s)
 {
-while (*s1 && (*s1 == *s2))
-{
-	s1++;
-	s2++;
+	for (p = accept; *p; p++)
+	{
+		if (*s == *p)
+		{
+			count++;
+			break;
+		}
+	}
+	if (*p == '\0')
+	{
+		return (count);
+	}
+	s++;
 }
-return (*(unsigned char *)s1 - *(unsigned char *)s2);
+
+return (count);
 }
