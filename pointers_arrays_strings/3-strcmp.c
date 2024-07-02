@@ -10,8 +10,8 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int count = 0;
-char *p;
+	unsigned int count = 0;
+	char *p;
 
 while (*s)
 {
@@ -30,5 +30,5 @@ while (*s)
 	s++;
 }
 
-return (count);
+	return (count);
 }
