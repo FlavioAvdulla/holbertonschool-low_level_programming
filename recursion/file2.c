@@ -1,20 +1,18 @@
 #include <stdio.h>
 int main(void)
 {
-    int number;
-    
-    for (number = 0; number <= 10; number++)
+    int num;
+
+    for (num = 0; num <= 10; num++)
     {
-        if (number < 10)
+        if (num < 10)
         {
-            printf("%d, ", number);
+            printf("%d, ", num);
         }
         else
         {
-            printf("%d", number);
+            printf("%d", num);
         }
     }
-    printf("\n");
-
     return (0);
 }
