@@ -3,17 +3,16 @@ int main(void)
 {
     int num;
 
-    for (num = 0; num <= 10; num++)
-    {
-        if (num < 10)
+    for(num = 0; num <= 20; num += 2)
+    if (num < 20)
         {
             printf("%d, ", num);
         }
-        else
+    else
         {
             printf("%d", num);
         }
-    }
+        
     printf("\n");
     return (0);
 }
