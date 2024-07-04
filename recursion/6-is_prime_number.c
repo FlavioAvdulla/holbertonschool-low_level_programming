@@ -1,6 +1,6 @@
 #include "main.h"
 /*
-* _is_prime_helper - recursively checks if n is a prime number
+* _is_prime_helper - checks if n is a prime number
 * @n: the number to check
 * @divisor: the current divisor to check
 *
