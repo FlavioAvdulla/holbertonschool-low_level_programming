@@ -1,31 +1,42 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+
 /**
- * main - entry point
- * @argc: argument count
- * @argv: argument array
- *
- * Return: Always 0.
- */
+* is_number - Checks if a string is a valid number
+* @str: The string to check
+*
+* Return: 1 if the string is a number, 0 otherwise
+*/
+int is_number(char *str)
+{
+while (*str) {
+	if (!isdigit(*str)) {
+		return (0);
+	}
+	str++;
+}
+return (1);
+}
+
 int main(int argc, char *argv[])
 {
-	int i, j, result;
+int sum = 0;
+int i;
 
-	result = 0;
-	for (i = 0; i < argc; i++)
-	{
-		result += atoi(argv[i]);
-		for (j = 0; argv[i][j] != '\0'; j++)
-		{
-			if (argv[i][j] < '0' || argv[i][j] > '9')
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
-	}
-
-	printf("%d\n", result);
+if (argc == 1) {
+	printf("0\n");
 	return (0);
+}
+
+for (i = 1; i < argc; i++) {
+	if (!is_number(argv[i])) {
+		printf("Error\n");
+		return 1;
+	}
+	sum += atoi(argv[i]);
+}
+
+printf("%d\n", sum);
+return (0);
 }
