@@ -3,11 +3,10 @@
 #include <ctype.h>
 
 /**
- * main - entry point
- * @argc: argument count
- * @argv: argument array
+ * is_number - Checks if a string is a valid number
+ * @str: The string to check
  *
- * Return: Always 0.
+ * Return: 1 if the string is a number, 0 otherwise
  */
 int is_number(char *str)
 {
