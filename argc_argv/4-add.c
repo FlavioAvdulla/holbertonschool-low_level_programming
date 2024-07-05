@@ -10,11 +10,8 @@
 int main(int argc, char *argv[])
 {
 	int i, j, result;
-	if (argc < 2)
-	{
-	printf("0\n");
-	return (0);
-	}
+
+	result = 0;
 	for (i = 0; i < argc; i++)
 	{
 		result += atoi(argv[i]);
