@@ -1,18 +1,25 @@
 #include <stdio.h>
-#include <string.h>
 
 int main()
 {
-    char str1[] = "Hello World!";
-    char str2[20] = "Hello World!";
-    char str3[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', '!', '\0'};
-    char *str4 = "Hello World!";
+    // Declare and initialize an array
+    int numbers[] = {1, 3, 5, 7, 9};
+    // Determine the size of the array
+    int size = sizeof(numbers) / sizeof (numbers[0]);
+    // Initialize the minimum element to the first element of the array
+    int min = numbers[0];
 
+    // Loop through the array to find the minimum element
+    for (int i = 0; i < size; i++)
+    {
+        if (numbers[i] < min)
+        {
+            min = numbers[i];
+        }
 
-    printf("str1: %s\n", str1);
-    printf("str2: %s\n", str2);
-    printf("str3: %s\n", str3);
-    printf("str4: %s\n", str4);
+    }
+    // Print the minimum element
+    printf("the smallest element in the array is: %d\n", min);
 
     return (0);
 }
