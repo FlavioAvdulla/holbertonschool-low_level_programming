@@ -30,19 +30,53 @@ int sum_array(int my_array[], int size)
 
 }
 
-int find_min(int my_array[], int size)
+
+
+float avg_array(int my_array[], int size)
+
 {
-    return (0);
+
+    float avg; 
+
+    avg = (float) (sum_array(my_array, size)) / size; 
+
+    return (avg);
+
 }
+
+
+
+int find_min(int my_array[], int size)
+
+{
+
+    int min_value = my_array[0];
+
+    for (int i = 0; i < size; i++) 
+
+    {
+
+        if (my_array[i] < min_value)
+
+            min_value = my_array[i];
+
+    }
+
+    return (min_value);
+
+}
+
 
 
 int main(void)
 
 {
 
-    int result;
+    int min, result;
 
-    int numbers[] = {7, 2, 1, 8, 9, 13};
+    float avg;
+
+    int numbers[] = {7, -2, 1, 4, 2, 8, 1, 15, -7};
 
     int length = sizeof(numbers) / sizeof(numbers[0]);
 
@@ -62,13 +96,21 @@ int main(void)
 
     printf("Sum = %d\n", result);
 
-    
-    
-    printf("\n4. print the min in all array\n");
 
-    result = find_min(numbers, length);
 
-    printf("minimum = %d\n", min);
+    printf("\n3. Average of all elements in array\n");
+
+    avg = avg_array(numbers, length);
+
+    printf("Average = %.2f\n", avg);
+
+
+
+    printf("\n4. Minimum element of array\n");
+
+    min = find_min(numbers, length);
+
+    printf("Minimum value = %d\n", min);
 
     
 
