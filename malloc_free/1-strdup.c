@@ -3,11 +3,11 @@
 
 /**
 * _strdup - returns a pointer to a newly allocated space in memory,
-*           which contains a copy of the string given as a parameter.
+* which contains a copy of the string given as a parameter.
 * @str: the string to duplicate
 *
 * Return: a pointer to the duplicated string, or NULL if insufficient memory
-*         was available or if str is NULL
+* was available or if str is NULL
 */
 char *_strdup(char *str)
 {
