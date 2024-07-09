@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
-* create_array - creates an array of chars, and initializes it with a specific char
+* create_array - creates an array of chars, initializes it with a specific char
 * @size: the size of the array
 * @c: the char to initialize the array with
 *
@@ -16,11 +16,13 @@ if (size == 0)
 {
 	return (NULL);
 }
+
 array = malloc(size * sizeof(char));
 if (array == NULL)
 {
 	return (NULL);
 }
+
 for (i = 0; i < size; i++)
 {
 	array[i] = c;
