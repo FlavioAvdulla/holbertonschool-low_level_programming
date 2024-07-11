@@ -1,18 +1,16 @@
 #include <stdio.h>
 #include "dog.h"
-
 /**
-* main - check the code
-*
-* Return: Always 0.
-*/
-int main(void)
-{
-	struct dog my_dog;
+ * struct dog - define a dog type
+ * @a: Dog's name
+ * @b: Dog's age
+ * @c: Dog's owner
+ *
+ * Description: a custom defined structure of a dog
+ */
 
-	my_dog.name = "Poppy";
-	my_dog.age = 3.5;
-	my_dog.owner = "Bob";
-	printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
-	return (0);
-}
+typedef struct dog {
+	char *name;
+	float age;
+	char *owner;
+} dog;
