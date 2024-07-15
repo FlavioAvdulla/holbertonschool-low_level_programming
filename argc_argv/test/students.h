@@ -5,12 +5,14 @@
 
 typedef struct Student
 {
-    char *name[MAX_NAME_LENGTH];
+    char name[MAX_NAME_LENGTH];
     int age;
     float average_grade;
 } Student;
 
-void initialize_student(Student *student, char *name, int age, float grade);
-void print_student(Student *student);
+void initialize_student(Student *student, const char *name, int age, float grade);
+void print_student(const Student *student);
+float average_grade(const Student *students, int array_size);
+float max_grade(const Student *students, int array_size);
 
 #endif
