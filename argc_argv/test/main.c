@@ -1,24 +1,55 @@
-#include <stdio.h>
 #include "student.h"
+
+#include <stdio.h>
+
+
 
 #define SIZE 4
 
-int main()
+
+
+int main(void)
+
 {
+
     Student students[SIZE];
 
-    initialize_student(&students[0], "John", 23, 8.7);
-    initialize_student(&students[1], "Fla", 28, 4.7);
-    initialize_student(&students[2], "Flo", 23, 8.7);
-    initialize_student(&students[3], "Fli", 21, 7.7);
+    initialize_student(&students[0], "John", 23, 8.5);
 
-    for (int i = 0; i < SIZE; i++)
-    {
+    initialize_student(&students[1], "James", 19, 4.2);
+
+    initialize_student(&students[2], "Anne", 35, 9.6);
+
+    initialize_student(&students[3], "Alice", 19, 7.3);
+
+
+
+    for (int i=0; i<SIZE; i++)
+
         print_student(&students[i]);
-    }
+
+
 
     printf("Average grade is: %.2f\n", average_grade(students, SIZE));
+
     printf("Max grade is: %.2f\n", max_grade(students, SIZE));
 
-    return 0;
+    printf("Min grade is: %.2f\n", min_grade(students, SIZE));
+
+
+
+    int position = search_grade(students, SIZE, 9.6);
+
+    if (position == -1)
+
+        printf("Element is not found in the array\n");
+
+    else
+
+        printf("Element found at position %d\n", position);
+
+
+
+    return (0);
+
 }
