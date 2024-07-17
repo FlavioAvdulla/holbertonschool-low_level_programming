@@ -3,18 +3,18 @@
 #include "3-calc.h"
 
 /**
- * main - Performs simple operations
- * @argc: The number of arguments
- * @argv: The array of arguments
- *
- * Return: 0 on success, or an error code on failure
- */
+* main - Performs simple operations
+* @argc: The number of arguments
+* @argv: The array of arguments
+*
+* Return: 0 on success, or an error code on failure
+*/
 int main(int argc, char *argv[])
 {
 	int num1, num2, result;
 	int (*operation)(int, int);
 
-	if(argc != 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	}
 
 	result = operation(num1, num2);
-	
+
 	printf("%d\n", result);
 
 	return (0);
