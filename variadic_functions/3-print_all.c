@@ -2,6 +2,10 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 
+/**
+* print_all - Prints anything based on the format specified.
+* @format: A list of types of arguments passed to the function.
+*/
 void print_all(const char * const format, ...)
 {
 	va_list args;
