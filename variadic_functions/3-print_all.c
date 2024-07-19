@@ -6,11 +6,11 @@
 * @format: A list of types of arguments passed to the function.
 */
 void print_all(const char * const format, ...)
-	{
+{
 	va_list args;
 	int i = 0;
 	char *str;
-	char *separator = "";
+	int printed = 0;
 
 	va_start(args, format);
 
@@ -19,22 +19,33 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				printf("%s%c", separator, va_arg(args, int));
+				if (printed)
+					printf(", ");
+				printf("%c", va_arg(args, int));
+				printed = 1;
 				break;
 			case 'i':
-				printf("%s%d", separator, va_arg(args, int));
+				if (printed)
+					printf(", ");
+				printf("%d", va_arg(args, int));
+				printed = 1;
 				break;
 			case 'f':
-				printf("%s%f", separator, va_arg(args, double));
+				if (printed)
+					printf(", ");
+				printf("%f", va_arg(args, double));
+				printed = 1;
 				break;
 			case 's':
+				if (printed)
+					printf(", ");
 				str = va_arg(args, char *);
 				if (str == NULL)
 					str = "(nil)";
-				printf("%s%s", separator, str);
+				printf("%s", str);
+				printed = 1;
 				break;
 		}
-		separator = ", ";
 		i++;
 	}
 
