@@ -60,13 +60,13 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	}
 
 	return (new_node);
-	}
+}
 
-	/**
-	* free_dlistint - Frees a dlistint_t list.
-	* @head: Pointer to the head of the list.
-	*/
-	void free_dlistint(dlistint_t *head)
+/**
+* free_dlistint - Frees a dlistint_t list.
+* @head: Pointer to the head of the list.
+*/
+void free_dlistint(dlistint_t *head)
 {
 dlistint_t *temp;
 
