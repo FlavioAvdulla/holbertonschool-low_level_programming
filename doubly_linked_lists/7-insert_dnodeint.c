@@ -6,7 +6,6 @@
 * @h: Double pointer to the head of the doubly linked list.
 * @idx: The index at which to insert the new node.
 * @n: The value to store in the new node.
-* 
 * Return: The address of the new node, or NULL if it failed.
 */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
@@ -38,7 +37,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		current = current->next;
 		i++;
 	}
-
 	if (current == NULL)
 	{
 		free(new_node);
@@ -50,8 +48,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	if (current->next != NULL)
 		current->next->prev = new_node;
-
 	current->next = new_node;
-
 	return (new_node);
-	}
+}
