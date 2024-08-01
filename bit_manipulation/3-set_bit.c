@@ -1,18 +1,17 @@
-#include <stdio.h>
 #include "main.h"
 
-int main(void)
+/**
+* set_bit - sets the value of a bit to 1 at a given index
+* @n: pointer to the number to modify
+* @index: the index of the bit to set (starting from 0)
+* Return: 1 if it worked, or -1 if an error occurred
+*/
+int set_bit(unsigned long int *n, unsigned int index)
 {
-    int n;
+	if (index >= sizeof(unsigned long int) * 8)
+		return (-1);
 
-    n = get_bit(1024, 10);
-    printf("%d\n", n);
+	*n |= (1UL << index);
 
-    n = get_bit(98, 1);
-    printf("%d\n", n);
-
-    n = get_bit(1024, 0);
-    printf("%d\n", n);
-
-    return (0);
+	return (1);
 }
