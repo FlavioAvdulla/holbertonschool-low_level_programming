@@ -17,7 +17,6 @@ void _errexit(char *str, char *file, int code)
  * _cp - copy source file to destination file
  * @file_from: source file
  * @file_to: destination file
- *
  * Return: void
  */
 void _cp(char *file_from, char *file_to)
