@@ -11,5 +11,6 @@ int create_file(const char *filename, char *text_content);
 int append_text_to_file(const char *filename, char *text_content);
 void cp(char *file_from, char *file_to);
 void check_fails(char *file_from, char *file_to);
+void closefd(int fd1, int fd2);
 
 #endif
