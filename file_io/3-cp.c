@@ -5,6 +5,7 @@
  *@fd1: first file
  *@fd2: second file
  */
+
 void closefd(int fd1, int fd2)
 {
 	if (close(fd1) == -1)
@@ -25,6 +26,7 @@ void closefd(int fd1, int fd2)
  * @argv: -array of arguments
  * Return: (0);
  */
+
 int main(int argc, char *argv[])
 {
 	int fdr, fdw;
