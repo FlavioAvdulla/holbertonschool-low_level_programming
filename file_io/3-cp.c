@@ -7,7 +7,7 @@
 #define BUFFER_SIZE 1024
 
 /**
- * closefd - closes file descriptors
+ * closefd - closes a file descriptor
  * @fd: file descriptor
  */
 void closefd(int fd)
@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 	if (fdw == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		close(fdr);
+		closefd(fdr);
 		exit(99);
 	}
 
