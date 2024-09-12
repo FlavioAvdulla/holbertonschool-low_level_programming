@@ -22,7 +22,7 @@ Write a script that runs a C file through the preprocessor and save the result i
 
 - **The C file name will be saved in the variable `$CFILE`**
 - **The output should be saved in the file `c`**
-- **File**: [Click Here](0-preprocessor)
+- **File**: [0-preprocessor](0-preprocessor)
 
 ### 1. Compiler
 Write a script that compiles a C file but does not link.
@@ -30,7 +30,7 @@ Write a script that compiles a C file but does not link.
 - **The C file name will be saved in the variable `$CFILE`**
 - **The output file should be named the same as the C file, but with the extension `.o` instead of `.c`.**
   - Example: if the C file is `main.c`, the output file should be `main.o`
-- **File**: [Click Here](1-compiler)
+- **File**: [1-compiler](1-compiler)
 
 ### 2. Assembler
 Write a script that generates the assembly code of a C code and save it in an output file.
@@ -38,13 +38,13 @@ Write a script that generates the assembly code of a C code and save it in an ou
 - **The C file name will be saved in the variable `$CFILE`**
 - **The output file should be named the same as the C file, but with the extension `.s` instead of `.c`.**
   - Example: if the C file is `main.c`, the output file should be `main.s`
-- **File**: [Click Here](2-assembler)
+- **File**: [2-assembler](2-assembler)
 
 ### 3. Name
 Write a script that compiles a C file and creates an executable named `cisfun`.
 
 - **The C file name will be saved in the variable `$CFILE`**
-- **File**: [Click Here](3-name)
+- **File**: [3-name](3-name)
 
 ### 4. Hello, puts
 Write a C program that prints exactly "Programming is like building a multilingual puzzle", followed by a new line.
@@ -52,7 +52,7 @@ Write a C program that prints exactly "Programming is like building a multilingu
 - **Use the function `puts`**
 - **You are not allowed to use `printf`**
 - **Your program should end with the value `0`**
-- **File**: [Click Here](4-puts.c)
+- **File**: [4-puts.c](4-puts.c)
 
 ### 5. Hello, printf
 Write a C program that prints exactly "with proper grammar, but the outcome is a piece of art,", followed by a new line.
@@ -61,7 +61,7 @@ Write a C program that prints exactly "with proper grammar, but the outcome is a
 - **You are not allowed to use the function `puts`**
 - **Your program should return `0`**
 - **Your program should compile without warning when using the `-Wall` gcc option**
-- **File**: [Click Here](5-printf.c)
+- **File**: [5-printf.c](5-printf.c)
 
 ### 6. Size is not grandeur, and territory does not make a nation
 Write a C program that prints the size of various types on the computer it is compiled and run on.
@@ -70,7 +70,7 @@ Write a C program that prints the size of various types on the computer it is co
 - **Warnings are allowed**
 - **Your program should return `0`**
 - **If you are using a Linux on Vagrant you might have to install the package `libc6-dev-i386` to test the `-m32` gcc option (normally you don't need to do anything on your sandbox).**
-- **File**: [Click Here](6-size.c)
+- **File**: [6-size.c](6-size.c)
 
 ### 7. What happens when you type gcc main.c
 Write a blog post that explains all the steps of compilation. Use command lines and examples to illustrate.
@@ -89,7 +89,7 @@ Write a script that generates the assembly code (Intel syntax) of a C code and s
 - **The C file name will be saved in the variable `$CFILE`.**
 - **The output file should be named the same as the C file, but with the extension `.s` instead of `.c`.**
   - Example: if the C file is `main.c`, the output file should be `main.s`
-- **File**: [Click Here](100-intel)
+- **File**: [100-intel](100-intel)
 
 ### 9. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity
 Write a C program that prints exactly "and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
@@ -97,7 +97,7 @@ Write a C program that prints exactly "and that piece of art is useful" - Dora K
 - **You are not allowed to use any functions listed in the NAME section of the man (3) `printf` or man (3) `puts`**
 - **Your program should return `1`**
 - **Your program should compile without any warnings when using the `-Wall` gcc option**
-- **File**: [Click Here](101-quote.c)
+- **File**: [101-quote.c](101-quote.c)
 
 ## How to Use
 
