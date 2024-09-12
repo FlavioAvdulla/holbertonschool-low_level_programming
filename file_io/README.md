@@ -18,7 +18,7 @@ Write a function that reads a text file and prints it to the POSIX standard outp
   - Reads and prints up to `letters` characters from the file specified by `filename`.
   - Returns the actual number of characters read and printed.
   - Returns `0` if the file cannot be opened or read, if `filename` is `NULL`, or if `write` fails.
-- **File:** [Click Here](0-read_textfile.c)
+- **File:** [0-read_textfile.c](0-read_textfile.c)
 
 ## Task 1: Under the snow
 
@@ -32,7 +32,7 @@ Create a function that creates a file.
   - If the file already exists, it is truncated.
   - Returns `-1` if `filename` is `NULL`.
   - If `text_content` is `NULL`, creates an empty file.
-- **File:** [Click Here](1-create_file.c)
+- **File:** [1-create_file.c](1-create_file.c)
 
 ## Task 2: Speak gently, she can hear
 
@@ -45,7 +45,7 @@ Write a function that appends text at the end of a file.
   - Does not create the file if it does not exist.
   - Returns `-1` if `filename` is `NULL`.
   - If `text_content` is `NULL`, does not add anything to the file.
-- **File:** [Click Here](2-append_text_to_file.c)
+- **File:** [2-append_text_to_file.c](2-append_text_to_file.c)
 
 ## Task 3: cp
 
@@ -62,4 +62,4 @@ Write a program that copies the content of a file to another file.
   - The created file has permissions `rw-rw-r--`.
   - Reads `1,024` bytes at a time from `file_from` to minimize system calls.
   - Uses `dprintf` for printing error messages.
-- **File:** [Click Here](3-cp.c)
+- **File:** [3-cp.c](3-cp.c)
