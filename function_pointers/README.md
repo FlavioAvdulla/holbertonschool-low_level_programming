@@ -2,26 +2,35 @@
 
 This repository contains several C functions and a program that perform various operations. Below are the details of each task and the corresponding files.
 
+## Table of Contents
+
+- Task 0: What's my name
+- Task 1: If you spend too much time thinking about a thing, you'll never get it done
+- Task 2: To hell with circumstances; I create opportunities
+- Task 3: A goal is not always meant to be reached, it often serves simply as something to aim at
+- Error Handling
+- Usage
+
 ## Task 0: What's my name
 
 Write a function that prints a name.
 
 - **Prototype:** `void print_name(char *name, void (*f)(char *));`
-- **File:** [Click Here](0-print_name.c)
+- **File:** [0-print_name.c](0-print_name.c)
 
 ## Task 1: If you spend too much time thinking about a thing, you'll never get it done
 
 Write a function that executes a function given as a parameter on each element of an array.
 
 - **Prototype:** `void array_iterator(int *array, size_t size, void (*action)(int));`
-- **File:** [Click Here](1-array_iterator.c)
+- **File:** [1-array_iterator.c](1-array_iterator.c)
 
 ## Task 2: To hell with circumstances; I create opportunities
 
 Write a function that searches for an integer.
 
 - **Prototype:** `int int_index(int *array, int size, int (*cmp)(int));`
-- **File:** [Click Here](2-int_index.c)
+- **File:** [2-int_index.c](2-int_index.c)
 
 ## Task 3: A goal is not always meant to be reached, it often serves simply as something to aim at
 
