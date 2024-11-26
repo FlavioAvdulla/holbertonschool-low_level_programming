@@ -4,7 +4,7 @@ This repository contains various projects completed as part of the Holberton Sch
 
 ## Table of Contents
 1. [argc_argv](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/argc_argv)
-2. [bit_manipulation](
+2. [bit_manipulation](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/bit_manipulation)
 3. [doubly_linked_lists](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/bit_manipulation)
 4. [file_io](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/file_io)
 5. [function_pointers](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/function_pointers)
