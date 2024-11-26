@@ -3,22 +3,22 @@
 This repository contains various projects completed as part of the Holberton School's low-level programming curriculum. Below is a list of directories included in this repository along with a brief description of each project.
 
 ## Table of Contents
-1. [argc_argv](#argc_argv)
-2. [bit_manipulation](#bit_manipulation)
-3. [doubly_linked_lists](#doubly_linked_lists)
-4. [file_io](#file_io)
-5. [function_pointers](#function_pointers)
-6. [functions_nested_loops](#functions_nested_loops)
-7. [hello_world](#hello_world)
-8. [malloc_free](#malloc_free)
-9. [more_functions_nested_loops](#more_functions_nested_loops)
-10. [more_malloc_free](#more_malloc_free)
-11. [pointers_arrays_strings](#pointers_arrays_strings)
-12. [recursion](#recursion)
-13. [singly_linked_lists](#singly_linked_lists)
-14. [structures_typedef](#structures_typedef)
-15. [variables_if_else_while](#variables_if_else_while)
-16. [variadic_functions](#variadic_functions)
+1. [argc_argv](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/argc_argv)
+2. [bit_manipulation](
+3. [doubly_linked_lists](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/bit_manipulation)
+4. [file_io](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/file_io)
+5. [function_pointers](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/function_pointers)
+6. [functions_nested_loops](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/functions_nested_loops)
+7. [hello_world](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/hello_world)
+8. [malloc_free](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/malloc_free)
+9. [more_functions_nested_loops](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/more_functions_nested_loops)
+10. [more_malloc_free](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/more_malloc_free)
+11. [pointers_arrays_strings](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/pointers_arrays_strings)
+12. [recursion](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/recursion)
+13. [singly_linked_lists](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/singly_linked_lists)
+14. [structures_typedef](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/structures_typedef)
+15. [variables_if_else_while](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/variables_if_else_while)
+16. [variadic_functions](https://github.com/FlavioAvdulla/holbertonschool-low_level_programming/tree/main/variadic_functions)
 
 ## Directories
 
